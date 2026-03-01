@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:3b82f6,100:06b6d4&height=220&section=header&text=BrainwavezAI&fontSize=60&fontColor=ffffff&fontAlignY=35&desc=AI%20Optimization%2C%20Consulting%20%26%20Development&descSize=20&descAlignY=55&animation=fadeIn" width="100%"/>
 
-### We build, optimize, and deploy AI agents that cut costs by 98%
+### We build, optimize, and deploy AI agents that cut costs up to 97%
 
 ```
 $1,500/mo per agent  -->  $30/mo per agent  |  98% cost reduction  |  24/7 uptim

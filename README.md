@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:3b82f6,100:06b6d4&height=220&section=header&text=BrainwavezAI&fontSize=60&fontColor=ffffff&fontAlignY=35&desc=AI%20That%20Pays%20for%20Itself&descSize=20&descAlignY=55&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:3b82f6,100:06b6d4&height=220&section=header&text=BrainwavezAI&fontSize=60&fontColor=ffffff&fontAlignY=35&desc=AI%20Optimization%2C%20Consulting%20%26%20Development&descSize=20&descAlignY=55&animation=fadeIn" width="100%"/>
 
 ### We build, optimize, and deploy AI agents that cut costs by 98%
 
 ```
-$1,500/mo per agent  -->  $30/mo per agent  |  98% cost reduction  |  24/7 uptime
+$1,500/mo per agent  -->  $30/mo per agent  |  98% cost reduction  |  24/7 uptim
 ```
 
 [![Website](https://img.shields.io/badge/Website-brainwavezai.com-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white)](https://brainwavezai.com)
@@ -42,40 +42,3 @@ $1,500/mo per agent  -->  $30/mo per agent  |  98% cost reduction  |  24/7 uptim
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-
-**AI & LLM**
-
-![Claude](https://img.shields.io/badge/Claude-7c3aed?style=flat-square&logo=anthropic&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-
-</div>
-
----
-
-## 🚀 How We Work
-
-```
-1. Discovery Call    →  Free 30-min call. We learn your pain points.
-2. Strategy & Scope  →  Define project, select models, agree on deliverables.
-3. Build & Iterate   →  Rapid dev with weekly demos. Progress from week one.
-4. Deploy & Optimize →  Launch to production with monitoring baked in.
-```
-
----
-
-<div align="center">
-
-### 💬 Ready to make AI work for you?
-
-**Book a free consultation — no commitments, no sales pitch.**
-
-[![Get in Touch](https://img.shields.io/badge/Book_Free_Consultation-7c3aed?style=for-the-badge&logo=calendar&logoColor=white)](mailto:brainwavezai@protonmail.com)
-
-```
-Based in Denmark 🇩🇰  ·  Building Globally 🌍  ·  Open Source Believer
-```
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:3b82f6,100:06b6d4&height=100&section=footer" width="100%"/>
-
-</div>

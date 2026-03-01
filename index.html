@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainwavezAI — AI Optimization, Consulting & Development | Denmark</title>
+    <meta name="description" content="We build AI agents that actually pay for themselves. From $1,500/mo to $30/mo per agent. AI optimization, consulting, and software development based in Denmark.">
+    <meta name="keywords" content="AI optimization, AI consulting, AI agents, software development, Denmark, machine learning, LLM cost reduction, AI development, crypto AI, on-chain agents">
+    <meta name="author" content="BrainwavezAI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brainwavezai.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brainwavezai.com/">
+    <meta property="og:title" content="BrainwavezAI — AI That Pays for Itself">
+    <meta property="og:description" content="AI optimization, consulting & development. We cut AI agent costs by 98%. From $1,500/mo to $30/mo per agent. Based in Denmark, building globally.">
+    <meta property="og:image" content="https://brainwavezai.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:site_name" content="BrainwavezAI">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@brainwavezai">
+    <meta name="twitter:creator" content="@brainwavezai">
+    <meta name="twitter:title" content="BrainwavezAI — AI That Pays for Itself">
+    <meta name="twitter:description" content="AI optimization, consulting & development. We cut AI agent costs by 98%. Based in Denmark.">
+    <meta name="twitter:image" content="https://brainwavezai.com/og-image.png">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "BrainwavezAI",
+      "description": "AI optimization, consulting, and software development. We build AI agents that pay for themselves.",
+      "url": "https://brainwavezai.com",
+      "email": "brainwavezai@protonmail.com",
+      "areaServed": ["DK", "Worldwide"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DK"
+      },
+      "sameAs": [
+        "https://x.com/brainwavezai",
+        "https://github.com/brainwavezai"
+      ],
+      "serviceType": ["AI Optimization", "AI Consulting", "Software Development"],
+      "knowsAbout": ["Artificial Intelligence", "Machine Learning", "LLM Optimization", "Crypto AI", "AI Agents"]
+    }
+    </script>
+
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://brainwavezai.com/">
+    <link rel="alternate" hreflang="da" href="https://brainwavezai.com/?lang=da">
+    <link rel="alternate" hreflang="x-default" href="https://brainwavezai.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --purple-deep: #0a0a1a;
+            --purple-dark: #12112b;
+            --purple-mid: #1e1a4a;
+            --purple-bright: #7c3aed;
+            --purple-light: #a78bfa;
+            --blue-bright: #3b82f6;
+            --blue-cyan: #06b6d4;
+            --blue-light: #67e8f9;
+            --pink-accent: #c084fc;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --gradient-main: linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #06b6d4 100%);
+            --gradient-glow: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(59,130,246,0.3), rgba(6,182,212,0.3));
+            --glass-bg: rgba(18, 17, 43, 0.7);
+            --glass-border: rgba(124, 58, 237, 0.15);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--purple-deep);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== ANIMATED BACKGROUND ===== */
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background-image:
+                linear-gradient(rgba(124,58,237,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(124,58,237,0.05) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .bg-orbs {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .bg-orbs::before, .bg-orbs::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            animation: orbFloat 20s ease-in-out infinite;
+        }
+
+        .bg-orbs::before {
+            width: 600px; height: 600px;
+            background: rgba(124,58,237,0.15);
+            top: -200px; left: -100px;
+        }
+
+        .bg-orbs::after {
+            width: 500px; height: 500px;
+            background: rgba(6,182,212,0.1);
+            bottom: -200px; right: -100px;
+            animation-delay: -10s;
+        }
+
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(60px, -40px) scale(1.1); }
+            66% { transform: translate(-40px, 30px) scale(0.95); }
+        }
+
+        /* ===== LAYOUT ===== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+        section { padding: 100px 0; position: relative; z-index: 1; }
+
+        /* ===== NAV ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 16px 0;
+            backdrop-filter: blur(20px);
+            background: rgba(10,10,26,0.8);
+            border-bottom: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text-primary); }
+
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: rgba(124,58,237,0.15);
+            border: 1px solid rgba(124,58,237,0.3);
+            border-radius: 8px;
+            padding: 4px;
+            cursor: pointer;
+        }
+
+        .lang-btn {
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .lang-btn.active {
+            background: var(--purple-bright);
+            color: white;
+        }
+
+        .btn-cta-nav {
+            padding: 8px 20px;
+            background: var(--gradient-main);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-cta-nav:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(124,58,237,0.4); }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: rgba(124,58,237,0.15);
+            border: 1px solid rgba(124,58,237,0.3);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--purple-light);
+            margin-bottom: 24px;
+        }
+
+        .hero-badge .pulse {
+            width: 8px; height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 36px;
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+        .btn-primary {
+            padding: 14px 32px;
+            background: var(--gradient-main);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(124,58,237,0.4);
+        }
+
+        .btn-secondary {
+            padding: 14px 32px;
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid rgba(124,58,237,0.4);
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(124,58,237,0.1);
+            border-color: var(--purple-bright);
+        }
+
+        /* Hero visual */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 32px;
+            backdrop-filter: blur(20px);
+            width: 100%;
+            max-width: 460px;
+        }
+
+        .hero-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .hero-card-header .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #eab308; }
+        .dot-green { background: #22c55e; }
+
+        .cost-comparison { margin-bottom: 24px; }
+
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(124,58,237,0.1);
+        }
+
+        .cost-label { color: var(--text-secondary); font-size: 0.9rem; }
+
+        .cost-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
+        .cost-old { color: #ef4444; text-decoration: line-through; opacity: 0.7; }
+        .cost-new { color: #22c55e; font-size: 1.2rem; }
+
+        .savings-bar {
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.3);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .savings-bar .big { font-size: 1.8rem; font-weight: 800; color: #22c55e; }
+        .savings-bar .label { color: var(--text-secondary); font-size: 0.85rem; margin-top: 4px; }
+
+        .hero-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(124,58,237,0.2);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+        }
+
+        /* ===== STATS BAR ===== */
+        .stats-bar {
+            padding: 40px 0;
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+            background: rgba(18,17,43,0.5);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-item .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        /* ===== SERVICES ===== */
+        .services { background: transparent; }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: rgba(124,58,237,0.1);
+            border: 1px solid rgba(124,58,237,0.2);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--purple-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-bottom: 56px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 36px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gradient-main);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(124,58,237,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .service-card:hover::before { opacity: 1; }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .icon-purple { background: rgba(124,58,237,0.15); }
+        .icon-blue { background: rgba(59,130,246,0.15); }
+        .icon-cyan { background: rgba(6,182,212,0.15); }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .service-features li::before {
+            content: '→';
+            color: var(--purple-light);
+            font-weight: 600;
+        }
+
+        /* ===== PROCESS ===== */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 32px 20px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 auto 20px;
+        }
+
+        .process-step h3 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 55px;
+            right: -12px;
+            width: 24px;
+            height: 2px;
+            background: rgba(124,58,237,0.3);
+        }
+
+        /* ===== TECH STACK ===== */
+        .tech-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .tech-pill {
+            padding: 10px 24px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            transition: all 0.2s;
+        }
+
+        .tech-pill:hover {
+            border-color: rgba(124,58,237,0.4);
+            color: var(--text-primary);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            padding: 80px 0;
+        }
+
+        .cta-box {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 64px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: var(--gradient-main);
+            border-radius: 26px;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .cta-box p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            padding: 48px 0 32px;
+            border-top: 1px solid var(--glass-border);
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+
+        .footer-col h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 4px 0;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover { color: var(--text-primary); }
+
+        .footer-bottom {
+            border-top: 1px solid var(--glass-border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .footer-socials { display: flex; gap: 16px; }
+
+        .footer-socials a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-socials a:hover { color: var(--purple-light); }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-sub { margin: 0 auto 36px; }
+            .hero-actions { justify-content: center; }
+            .hero-visual { margin-top: 40px; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+            .process-grid { grid-template-columns: 1fr 1fr; }
+            .process-step::after { display: none; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10,10,26,0.95);
+                backdrop-filter: blur(20px);
+                padding: 24px;
+                border-bottom: 1px solid var(--glass-border);
+            }
+            section { padding: 60px 0; }
+            .hero { min-height: auto; padding: 120px 0 60px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .cta-box { padding: 40px 24px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-orbs"></div>
+
+<!-- NAV -->
+<nav>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="logo.svg" alt="BrainwavezAI Logo" style="width:44px;height:44px;border-radius:10px;">
+            <span>BrainwavezAI</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services" data-en="Services" data-da="Tjenester">Services</a></li>
+            <li><a href="#process" data-en="Process" data-da="Proces">Process</a></li>
+            <li><a href="#tech" data-en="Tech" data-da="Teknologi">Tech</a></li>
+            <li>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+                    <button class="lang-btn" data-lang="da" onclick="setLang('da')">DA</button>
+                </div>
+            </li>
+            <li><a href="#contact" class="btn-cta-nav" data-en="Get in Touch" data-da="Kontakt Os">Get in Touch</a></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                <span data-en="Based in Denmark, Building Globally" data-da="Baseret i Danmark, Bygger Globalt">Based in Denmark, Building Globally</span>
+            </div>
+            <h1>
+                <span data-en="AI That" data-da="AI Der">AI That</span><br>
+                <span class="gradient-text" data-en="Pays for Itself" data-da="Betaler for Sig Selv">Pays for Itself</span>
+            </h1>
+            <p class="hero-sub" data-en="We optimize, build, and deploy AI agents that cut your costs by 98%. From strategy to production — we turn AI from an expense into an investment." data-da="Vi optimerer, bygger og implementerer AI-agenter der reducerer dine omkostninger med 98%. Fra strategi til produktion — vi forvandler AI fra en udgift til en investering.">We optimize, build, and deploy AI agents that cut your costs by 98%. From strategy to production — we turn AI from an expense into an investment.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary" data-en="Book a Free Consultation →" data-da="Book en Gratis Konsultation →">Book a Free Consultation →</a>
+                <a href="#services" class="btn-secondary" data-en="See Our Services" data-da="Se Vores Tjenester">See Our Services</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-glow"></div>
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span style="margin-left:8px" data-en="cost_optimization.sh" data-da="omkostnings_optimering.sh">cost_optimization.sh</span>
+                </div>
+                <div class="cost-comparison">
+                    <div class="cost-row">
+                        <span class="cost-label" data-en="Before (per agent/mo)" data-da="Før (per agent/md)">Before (per agent/mo)</span>
+                        <span class="cost-value cost-old">$1,500</span>
+                    </div>
+                    <div class="cost-row">
+                        <span class="cost-label" data-en="After optimization" data-da="Efter optimering">After optimization</span>
+                        <span class="cost-value cost-new">$30</span>
+                    </div>
+                    <div class="cost-row" style="border-bottom:none">
+                        <span class="cost-label" data-en="Agents running" data-da="Aktive agenter">Agents running</span>
+                        <span class="cost-value" style="color:var(--blue-cyan)">24/7</span>
+                    </div>
+                </div>
+                <div class="savings-bar">
+                    <div class="big" data-en="98% Saved" data-da="98% Sparet">98% Saved</div>
+                    <div class="label" data-en="Average cost reduction per AI agent" data-da="Gennemsnitlig omkostningsreduktion per AI-agent">Average cost reduction per AI agent</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label" data-en="Cost Reduction" data-da="Omkostningsreduktion">Cost Reduction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label" data-en="Agent Uptime" data-da="Agent Oppetid">Agent Uptime</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50x</div>
+                <div class="stat-label" data-en="Faster Deployment" data-da="Hurtigere Implementering">Faster Deployment</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">DK</div>
+                <div class="stat-label" data-en="Based in Denmark" data-da="Baseret i Danmark">Based in Denmark</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-label" data-en="What We Do" data-da="Hvad Vi Tilbyder">What We Do</div>
+        <h2 class="section-title" data-en="Services" data-da="Tjenester">Services</h2>
+        <p class="section-desc" data-en="We help businesses harness AI effectively — cutting costs, building smart systems, and shipping production-grade solutions." data-da="Vi hjælper virksomheder med at udnytte AI effektivt — reducerer omkostninger, bygger intelligente systemer og leverer produktionsklare løsninger.">We help businesses harness AI effectively — cutting costs, building smart systems, and shipping production-grade solutions.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon icon-purple">⚡</div>
+                <h3 data-en="AI Optimization" data-da="AI Optimering">AI Optimization</h3>
+                <p data-en="Running AI agents shouldn't bankrupt you. We audit your current AI stack and slash costs by up to 98% — without sacrificing quality." data-da="AI-agenter behøver ikke koste en formue. Vi gennemgår din nuværende AI-stak og reducerer omkostningerne med op til 98% — uden at gå på kompromis med kvaliteten.">Running AI agents shouldn't bankrupt you. We audit your current AI stack and slash costs by up to 98% — without sacrificing quality.</p>
+                <ul class="service-features">
+                    <li data-en="LLM cost audits & model selection" data-da="LLM omkostningsanalyse & modelvalg">LLM cost audits & model selection</li>
+                    <li data-en="Prompt engineering & caching" data-da="Prompt engineering & caching">Prompt engineering & caching</li>
+                    <li data-en="Infrastructure optimization" data-da="Infrastruktur-optimering">Infrastructure optimization</li>
+                    <li data-en="Token usage analytics" data-da="Token-forbrugsanalyse">Token usage analytics</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon icon-blue">🧠</div>
+                <h3 data-en="AI Consulting" data-da="AI Rådgivning">AI Consulting</h3>
+                <p data-en="Not sure where to start with AI? We map your business processes, identify high-impact opportunities, and build a roadmap that makes sense." data-da="Ikke sikker på hvor du skal starte med AI? Vi kortlægger dine forretningsprocesser, identificerer muligheder med stor effekt og bygger en realistisk køreplan.">Not sure where to start with AI? We map your business processes, identify high-impact opportunities, and build a roadmap that makes sense.</p>
+                <ul class="service-features">
+                    <li data-en="AI readiness assessment" data-da="AI-modenhedsvurdering">AI readiness assessment</li>
+                    <li data-en="Use case identification" data-da="Identificering af use cases">Use case identification</li>
+                    <li data-en="Technology stack advisory" data-da="Teknologisk rådgivning">Technology stack advisory</li>
+                    <li data-en="ROI projections" data-da="ROI-fremskrivninger">ROI projections</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon icon-cyan">🛠</div>
+                <h3 data-en="Software Development" data-da="Softwareudvikling">Software Development</h3>
+                <p data-en="We build production-grade AI-powered applications. From autonomous agents to full-stack platforms — architected for scale and built to ship." data-da="Vi bygger produktionsklare AI-drevne applikationer. Fra autonome agenter til full-stack platforme — designet til skalering og klar til drift.">We build production-grade AI-powered applications. From autonomous agents to full-stack platforms — architected for scale and built to ship.</p>
+                <ul class="service-features">
+                    <li data-en="AI agent development" data-da="AI-agent udvikling">AI agent development</li>
+                    <li data-en="Full-stack applications" data-da="Full-stack applikationer">Full-stack applications</li>
+                    <li data-en="API & integration work" data-da="API & integrationsarbejde">API & integration work</li>
+                    <li data-en="Crypto & on-chain AI" data-da="Crypto & on-chain AI">Crypto & on-chain AI</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+    <div class="container">
+        <div class="section-label" data-en="How It Works" data-da="Sådan Fungerer Det">How It Works</div>
+        <h2 class="section-title" data-en="From Idea to Production in 4 Steps" data-da="Fra Idé til Produktion i 4 Trin">From Idea to Production in 4 Steps</h2>
+        <p class="section-desc" data-en="We keep things simple and fast. No 6-month discovery phases." data-da="Vi holder det simpelt og hurtigt. Ingen 6-måneders analysefaser.">We keep things simple and fast. No 6-month discovery phases.</p>
+
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3 data-en="Discovery Call" data-da="Indledende Samtale">Discovery Call</h3>
+                <p data-en="Free 30-min call. We learn your pain points and assess where AI can deliver the biggest ROI." data-da="Gratis 30-min samtale. Vi identificerer dine udfordringer og vurderer hvor AI kan give størst afkast.">Free 30-min call. We learn your pain points and assess where AI can deliver the biggest ROI.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3 data-en="Strategy & Scope" data-da="Strategi & Omfang">Strategy & Scope</h3>
+                <p data-en="We define the project, select the right models and architecture, and agree on deliverables." data-da="Vi definerer projektet, vælger de rette modeller og arkitektur, og aftaler leverancer.">We define the project, select the right models and architecture, and agree on deliverables.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3 data-en="Build & Iterate" data-da="Byg & Iterér">Build & Iterate</h3>
+                <p data-en="Rapid development with weekly demos. You see real progress from week one — not month three." data-da="Hurtig udvikling med ugentlige demoer. Du ser reel fremgang fra uge ét — ikke måned tre.">Rapid development with weekly demos. You see real progress from week one — not month three.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3 data-en="Deploy & Optimize" data-da="Deployment & Optimering">Deploy & Optimize</h3>
+                <p data-en="Launch to production with monitoring, cost tracking, and ongoing optimization baked in." data-da="Lancér i produktion med overvågning, omkostningssporing og løbende optimering inkluderet.">Launch to production with monitoring, cost tracking, and ongoing optimization baked in.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECH -->
+<section id="tech">
+    <div class="container" style="text-align:center">
+        <div class="section-label" data-en="Tech Stack" data-da="Teknologier">Tech Stack</div>
+        <h2 class="section-title" data-en="Built With the Best" data-da="Bygget Med Det Bedste">Built With the Best</h2>
+        <p class="section-desc" style="margin:0 auto 40px" data-en="We use cutting-edge tools to build reliable, cost-effective AI systems." data-da="Vi bruger banebrydende værktøjer til at bygge pålidelige og omkostningseffektive AI-systemer.">We use cutting-edge tools to build reliable, cost-effective AI systems.</p>
+        <div class="tech-logos">
+            <span class="tech-pill">Claude / Anthropic</span>
+            <span class="tech-pill">OpenAI</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">LangChain</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Solidity</span>
+            <span class="tech-pill">Vercel</span>
+            <span class="tech-pill">AWS</span>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+    <div class="container">
+        <div class="cta-box">
+            <h2 data-en="Ready to Make AI Work for You?" data-da="Klar Til at Få AI Til at Arbejde for Dig?">Ready to Make AI Work for You?</h2>
+            <p data-en="Book a free 30-minute consultation. No commitments, no sales pitch — just an honest look at how AI can help your business." data-da="Book en gratis 30-minutters konsultation. Ingen forpligtelser, intet salgspitch — bare et ærligt blik på hvordan AI kan hjælpe din virksomhed.">Book a free 30-minute consultation. No commitments, no sales pitch — just an honest look at how AI can help your business.</p>
+            <div class="cta-actions">
+                <a href="mailto:brainwavezai@protonmail.com" class="btn-primary" data-en="Book Free Consultation →" data-da="Book Gratis Konsultation →">Book Free Consultation →</a>
+                <a href="https://x.com/brainwavezai" target="_blank" class="btn-secondary" data-en="Follow on X" data-da="Følg på X">Follow on X</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="logo.svg" alt="BrainwavezAI Logo" style="width:44px;height:44px;border-radius:10px;">
+                    <span>BrainwavezAI</span>
+                </a>
+                <p data-en="AI optimization, consulting, and software development. Based in Denmark, building globally." data-da="AI optimering, rådgivning og softwareudvikling. Baseret i Danmark, bygger globalt.">AI optimization, consulting, and software development. Based in Denmark, building globally.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Services" data-da="Tjenester">Services</h4>
+                <a href="#services" data-en="AI Optimization" data-da="AI Optimering">AI Optimization</a>
+                <a href="#services" data-en="AI Consulting" data-da="AI Rådgivning">AI Consulting</a>
+                <a href="#services" data-en="Software Development" data-da="Softwareudvikling">Software Development</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Company" data-da="Virksomhed">Company</h4>
+                <a href="#process" data-en="How it Works" data-da="Sådan Fungerer Det">How it Works</a>
+                <a href="#tech" data-en="Tech Stack" data-da="Teknologier">Tech Stack</a>
+                <a href="#contact" data-en="Contact" data-da="Kontakt">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Connect" data-da="Forbind">Connect</h4>
+                <a href="https://x.com/brainwavezai" target="_blank">X / Twitter</a>
+                <a href="https://github.com/brainwavezai" target="_blank">GitHub</a>
+                <a href="mailto:brainwavezai@protonmail.com">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 BrainwavezAI. <span data-en="All rights reserved." data-da="Alle rettigheder forbeholdes.">All rights reserved.</span> Denmark 🇩🇰</span>
+            <div class="footer-socials">
+                <a href="https://x.com/brainwavezai" target="_blank">X</a>
+                <a href="https://github.com/brainwavezai" target="_blank">GH</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Language toggle with URL param support
+    let currentLang = 'en';
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        // Update URL without reload
+        const url = new URL(window.location);
+        if (lang === 'en') {
+            url.searchParams.delete('lang');
+        } else {
+            url.searchParams.set('lang', lang);
+        }
+        window.history.replaceState({}, '', url);
+
+        // Update meta description for SEO
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (lang === 'da') {
+            metaDesc.setAttribute('content', 'Vi bygger AI-agenter der betaler for sig selv. Fra $1.500/md til $30/md per agent. AI optimering, rådgivning og softwareudvikling baseret i Danmark.');
+        } else {
+            metaDesc.setAttribute('content', 'We build AI agents that actually pay for themselves. From $1,500/mo to $30/mo per agent. AI optimization, consulting, and software development based in Denmark.');
+        }
+
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        document.querySelectorAll('[data-en]').forEach(el => {
+            const text = el.getAttribute(`data-${lang}`);
+            if (text) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = text;
+                } else {
+                    el.textContent = text;
+                }
+            }
+        });
+    }
+
+    // Auto-detect language from URL or browser
+    (function() {
+        const urlLang = new URLSearchParams(window.location.search).get('lang');
+        if (urlLang === 'da') {
+            setLang('da');
+        } else if (!urlLang && navigator.language.startsWith('da')) {
+            setLang('da');
+        }
+    })();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                document.getElementById('navLinks').classList.remove('active');
+            }
+        });
+    });
+
+    // Nav background on scroll
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.style.background = 'rgba(10,10,26,0.95)';
+        } else {
+            nav.style.background = 'rgba(10,10,26,0.8)';
+        }
+    });
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .process-step, .stat-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
